@@ -1,5 +1,5 @@
 
-<div class="card" style="width: 18rem;">
+<div *ngIf="cliente" class="card" style="width: 18rem;">
     <div class="card-body">
       <h2 class="card-title">{{cliente.firstName}}</h2>
       <h6 class="card-subtitle mb-2 text-body-secondary">{{cliente.lastName}}</h6>
