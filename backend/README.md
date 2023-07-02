@@ -28,7 +28,7 @@
 
 ## Crear base de datos:
 * docker compose up
-* docker compose exec db
+* docker compose exec db bash
 * psql postgres
 * \c
 * CREATE DATABASE NEST;

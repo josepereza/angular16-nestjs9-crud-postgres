@@ -1,0 +1,19 @@
+version: '3.8'  
+services:  
+  db:  
+    container_name: pg_container  
+    image: postgres:14.3  
+    environment:  
+      POSTGRES_USER: postgres 
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: nest  
+    ports:  
+      - 5431:5432  
+  pgadmin:  
+    container_name: pgadmin4_container  
+    image: dpage/pgadmin4  
+    environment:  
+      PGADMIN_DEFAULT_EMAIL: admin@gmail.com  
+      PGADMIN_DEFAULT_PASSWORD: root  
+    ports:  
+      - 5050:80
