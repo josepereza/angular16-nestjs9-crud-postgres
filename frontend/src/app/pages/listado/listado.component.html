@@ -1,0 +1,11 @@
+<p>listado works!</p>
+
+
+<div class="listado" *ngFor="let item of clientes" (click)="micliente(item.id)">
+    <div class="card">
+    <div class="card-body">
+      {{item.firstName}}
+    </div>
+  </div>
+
+</div>

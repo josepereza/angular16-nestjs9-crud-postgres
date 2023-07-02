@@ -1,0 +1,22 @@
+<form [formGroup]="clienteForm" (ngSubmit)="createcliente()">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan" formControlName="firstName">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Gomez" formControlName="lastName">
+      </div>
+      <div class="mb-3">
+        <label for="saldo" class="form-label">Saldo</label>
+        <input type="number" class="form-control" id="saldo" placeholder="12.34" formControlName="saldo">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="true" id="flexCheckDefault" formControlName="isActive">
+        <label class="form-check-label" for="flexCheckDefault">
+         Is Active
+        </label>
+      </div>
+<button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>
