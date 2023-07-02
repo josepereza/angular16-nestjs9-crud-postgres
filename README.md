@@ -2,9 +2,9 @@
 # angular16-nestjs9-crud
 ## Crear base de datos:
 * docker compose up
-* docker exec -it CONTAINER_ID bash
-* psql postgres
-* \c
+* docker compose  exec db bash
+* psql -U postgres
+* \l
 * CREATE DATABASE NEST;
 * GRANT ALL PRIVILEGES ON DATABASE nest TO postgres;
 # angular16-nestjs9-crud-postgres
